@@ -1,0 +1,31 @@
+name: Memento
+description: memento dev blog
+
+markdown: kramdown
+highlighter: rouge
+
+paginate: 50
+baseurl: /
+domain_name: 'http://dev.memento.live'
+google_analytics: ''
+disqus_shortname: 'prevdev'
+
+url:            'http://dev.memento.live'
+author:         'memento'
+permalink:       /:year/:title/
+gems: [jekyll-paginate]
+future: true
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
